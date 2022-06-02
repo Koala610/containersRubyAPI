@@ -7,7 +7,10 @@ ruby "2.7.4"
 gem "rails", "~> 7.0.3"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+group :development, :test do # <<<< :development, not devlopment
+  gem "sqlite3", "~> 1.4"
+end
+
 
 gem 'webpacker', '~> 5.4.x'
 gem 'rack-cors'
