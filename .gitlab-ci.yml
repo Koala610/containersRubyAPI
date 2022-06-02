@@ -23,10 +23,9 @@ stages:
 depoy:
     image: ruby:latest
     stage: deploy
-    before_script:
-      - gem install dpl
     script:
-        - dpl --provider=heroku --api=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+        - gem install dpl
+        - dpl --provider=heroku --api= test-back2  --api-key=$HEROKU_API_KEY
     only:
         - main
 
