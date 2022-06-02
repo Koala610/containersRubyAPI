@@ -21,7 +21,7 @@ stages:
   - "deploy"
 
 depoy:
-    image: node:latest
+    image: ruby:latest
     stage: deploy
     before_script:
       - gem install dpl
