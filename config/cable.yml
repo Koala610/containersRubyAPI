@@ -1,6 +1,10 @@
 development:
+<<<<<<< HEAD
   adapter: redis
   url: redis://localhost:6379/1
+=======
+  adapter: async
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0
 
 test:
   adapter: test
@@ -8,4 +12,8 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+<<<<<<< HEAD
   channel_prefix: test_back_production
+=======
+  channel_prefix: box_api_production
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0

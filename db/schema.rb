@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_06_05_173238) do
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_06_01_142602) do
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0
   create_table "containers", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false

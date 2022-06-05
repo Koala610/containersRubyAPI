@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/usr/bin/env ruby
+=======
+#!/usr/bin/env ruby2.7
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0
 # frozen_string_literal: true
 
 #

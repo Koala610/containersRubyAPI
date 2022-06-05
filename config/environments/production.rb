@@ -14,7 +14,10 @@ Rails.application.configure do
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
+<<<<<<< HEAD
   config.action_controller.perform_caching = true
+=======
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
@@ -24,12 +27,15 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
 
+<<<<<<< HEAD
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
+=======
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
 
@@ -60,7 +66,11 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
+<<<<<<< HEAD
   # config.active_job.queue_name_prefix = "test_back_production"
+=======
+  # config.active_job.queue_name_prefix = "box_api_production"
+>>>>>>> b9353fb9369f522128b603d5471cbcdcfeb655b0
 
   config.action_mailer.perform_caching = false
 
