@@ -1,15 +1,9 @@
-staging:
-  stage: deploy
-  script:
-    - gem install dpl
-    - dpl --provider=heroku --app=$HEROKU_API_NAME --api_key=$HEROKU_API_KEY
-  only:
-    - main
+
 
 production:
   stage: deploy
   script:
     - gem install dpl
-    - dpl --provider=heroku --app=$HEROKU_API_NAME --api_key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api_key=$HEROKU_API_KEY
   only:
     - main
