@@ -1,7 +1,7 @@
 class Api::ContainersController < ApplicationController
   def index
-    #containers = Container.order('body DESC')
-    #render json: {status: '200', data:containers},status: :ok
+    containers = Container.order('body DESC')
+    render json: {status: '200', data:containers},status: :ok
   end
 
   def show
