@@ -26,6 +26,4 @@ depoy:
     script:
         - gem install dpl
         - dpl --provider=heroku --api=131  --api-key=$HEROKU_API_KEY
-    only:
-        - main
 
